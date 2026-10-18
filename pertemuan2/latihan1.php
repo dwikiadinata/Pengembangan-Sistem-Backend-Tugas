@@ -13,5 +13,8 @@ echo "Kode Jurusan: $kodejurusan" . "<br>";
 echo "Angkatan: $angkatan" . "<br>";
 echo "Umur : $umur" . "<br>";
 echo "Gender: $gender" . "<br>";
-echo "Hobi: " . implode (",", $hobi); 
+echo "Hobi : ";
+foreach ($hobi as $i){
+    echo $i . ", ";
+}
 ?>
