@@ -1,21 +1,10 @@
 <?php
-class NilaiRataRata {
-    private $rataRata;
-
-    public function __construct() {
-        $this->rataRata = 0;
-    }
-
-    public function setNilai($uts, $uas, $tugas) {
-        $this->rataRata = ($uts + $uas + $tugas) / 3;
-    }
-
-    public function getNilai() {
-        return $this->rataRata;
+class Mahasiswa {
+    public function getNilaiRataRata($tugas, $kuis, $uts, $uas) {
+        return ($tugas + $kuis + $uts + $uas) / 4;
     }
 }
 
-$nilai = new NilaiRataRata();
-$nilai->setNilai(80, 90, 70);
-echo "Nilai rata-rata: " . $nilai->getNilai();
+$mhs1 = new Mahasiswa();
+echo "Nilai rata-rata Mahasiswa: " . $mhs1->getNilaiRataRata(80, 80, 85, 90);
 ?>
