@@ -1,5 +1,5 @@
 <?php
-class Mahasiswa {
+class nilaiMahasiswa {
     public function getNilaiRataRata($tugas, $kuis, $uts, $uas) {
         return ($tugas + $kuis + $uts + $uas) / 4;
     }
