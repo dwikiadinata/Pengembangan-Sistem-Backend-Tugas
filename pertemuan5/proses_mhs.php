@@ -20,7 +20,7 @@ if (!ctype_digit($nim)) {
 if (!is_numeric($nilai) || (float)$nilai < 0 || (float)$nilai > 100) {
     $e[] = "Nilai " . htmlspecialchars($nilai) . " tidak valid!";
 }
-// Validasi pilihan prodi
+
 if (!in_array($prodi, ['SI', 'TI'], true)) {
     $e[] = 'Prodi tidak valid.';
 }
